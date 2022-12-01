@@ -83,7 +83,7 @@ void	ft_drawtree(double angle, double endx, double endy, int level)
 	rightendx = newbeginx + cos(-angle) * len;
 	rightendy = newbeginy + sin(-angle) * len;
 	render_line(newbeginx, newbeginy, rightendx, rightendy);
-	ft_drawtree(angle, leftendx, leftendy, level - 1);
+	// ft_drawtree(angle, leftendx, leftendy, level - 1);
 	ft_drawtree(angle, rightendx, rightendy, level - 1);
 }
 
